@@ -1,34 +1,48 @@
-# Race Intelligence 3D
+# Race Intelligence 3D — V10
 
-A cinematic Formula-style data-performance experience built around an interactive, shader-driven 3D race-car engineering model.
+A flagship interactive vehicle-performance experience built with React, TypeScript, Three.js, and React Three Fiber.
 
-## Live website
+## What changed in V10
 
-https://markofornoliak.github.io/race-intelligence-3d/
+- Rebuilt the project as a real application rather than a static visual microsite.
+- Added a substantially more detailed procedural Formula-style car with carbon surfaces, glowing wireframe overlays, suspension, tyres, brake discs, wings, floor, diffuser, halo, and energy-system geometry.
+- Added manual drag orbit, wheel zoom, auto orbit, five camera presets, and exploded component analysis.
+- Added Race, Engineering, and Thermal visualization modes with shader-driven material changes.
+- Added live simulated telemetry across speed, RPM, gear, throttle, brake, ERS, G-load, temperatures, fuel, DRS, and lap delta.
+- Added a component-level digital twin inspector for seven vehicle systems.
+- Added an interactive tyre and pit-window strategy simulator.
+- Added a complete telemetry lab, track map, synchronized channel table, infrastructure pipeline, keyboard controls, responsive mobile behavior, reduced-motion handling, and fullscreen command mode.
 
-## Highlights
+## Keyboard controls
 
-- Procedural Formula-style 3D car with chassis, floor, sidepods, halo, wings, wheels and suspension links
-- Drag-to-orbit interaction for mouse, pen and touch input
-- Dedicated front, side and rear view presets
-- Animated wireframe and telemetry-scan shader treatment
-- Rotating telemetry field, engineering callouts and responsive race-control interface
-- Single-file production edition with no build step required for the deployed site
-- Automated GitHub Pages deployment from `main`
+- `1` / `2` / `3`: Race, Engineering, Thermal modes
+- `H` / `F` / `S` / `R` / `T`: Hero, Front, Side, Rear, Top views
+- `E`: Toggle exploded analysis
+- `Space`: Pause or resume auto orbit
 
-## Technology
+## Local development
 
-- Three.js
-- WebGL
-- ES modules
-- Responsive HTML and CSS
-- GitHub Actions and GitHub Pages
+```bash
+npm install
+npm run dev
+```
 
-## Controls
+## Validation
 
-- Drag over the car to orbit the model
-- Select `FRONT`, `SIDE`, or `REAR` to change inspection angles
-- Use the reset control to return to the default side view
-- Enable automatic rotation from the hero controls
+```bash
+npm run verify
+```
 
-All telemetry values are representative campaign visualization data and are not live Formula 1 data.
+The sandbox-compatible checks are:
+
+```bash
+npm run test
+```
+
+## Deployment
+
+The GitHub Pages workflow in `.github/workflows/deploy.yml` installs dependencies, verifies the project, builds `dist`, and deploys on every push to `main`.
+
+Live URL: `https://markofornoliak.github.io/race-intelligence-3d/`
+
+All telemetry and engineering values are representative visualization data.
