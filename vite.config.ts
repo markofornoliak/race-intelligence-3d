@@ -8,13 +8,5 @@ export default defineConfig({
     target: 'es2022',
     cssCodeSplit: true,
     sourcemap: false,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          three: ['three', '@react-three/fiber'],
-          motion: ['framer-motion'],
-        },
-      },
-    },
   },
 });
