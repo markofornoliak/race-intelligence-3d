@@ -1,0 +1,1 @@
+export function Footer(){return <footer><div><strong>RACE INTELLIGENCE 3D</strong><span>INTERACTIVE PERFORMANCE SYSTEM</span></div><div><span>REACT / THREE.JS / TYPESCRIPT</span><span>REPRESENTATIVE ENGINEERING DATA</span><span>2026 / V10</span></div></footer>}

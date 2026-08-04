@@ -1,0 +1,35 @@
+{
+  "name": "race-intelligence-3d",
+  "private": true,
+  "version": "10.0.0",
+  "type": "module",
+  "engines": { "node": ">=20.19.0" },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b --pretty false",
+    "typecheck:offline": "tsc -p tsconfig.offline.json --pretty false",
+    "lint": "node scripts/lint.mjs",
+    "preview": "vite preview",
+    "verify": "npm run typecheck && npm run lint && npm run build",
+    "test": "npm run typecheck:offline && npm run lint"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.6.1",
+    "framer-motion": "^12.42.2",
+    "lucide-react": "^1.27.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.185.1",
+    "@vitejs/plugin-react": "^6.0.4",
+    "typescript": "^5.9.3",
+    "vite": "^8.1.5"
+  },
+  "repository": { "type": "git", "url": "https://github.com/markofornoliak/race-intelligence-3d.git" },
+  "homepage": "https://markofornoliak.github.io/race-intelligence-3d/"
+}

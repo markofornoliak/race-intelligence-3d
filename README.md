@@ -46,5 +46,3 @@ The GitHub Pages workflow in `.github/workflows/deploy.yml` installs dependencie
 Live URL: `https://markofornoliak.github.io/race-intelligence-3d/`
 
 All telemetry and engineering values are representative visualization data.
-
-V10 source installation is executed automatically by the repository workflow.
